@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply border-2 border-purple-300  bg-purple-800 
+ 
+ rounded-lg px-3 py-1 hover:bg-purple-400;
+}
+.input {
+  @apply border-2 border-purple-400 p-4 mt-3 outline-none rounded-xl hover:border-purple-800;
+}
