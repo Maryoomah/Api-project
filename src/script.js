@@ -23,7 +23,7 @@ function saveName() {
   const name = document.getElementById("userName").value;
   if (name.trim() !== "") {
     localStorage.setItem("username", name); //key,value
-    window.location.href = "home.html";
+    window.location.href = "src/home.html";
   } else {
     alert("Please enter your name!");
   }
