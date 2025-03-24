@@ -7,17 +7,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
     <title>Document</title>
     <link rel="stylesheet" href="./output/output.css" />
   </head>
-  <body class="font-montserrat text-white bg-purple-500">
+  <body class="text-white bg-purple-500">
     <!-- greeting -->
-    <h1 id="welcome" class="text-3xl font-bold text-center mt-6 mb-6"></h1>
+    <h1
+      id="welcome"
+      class="font-poppins text-4xl font-bold text-center mt-6 mb-6"
+    ></h1>
     <!-- main content -->
     <!-- inspiration -->
     <section
@@ -27,10 +40,10 @@
       <div
         class="max-w-2xl w-full bg-white/80 shadow-lg rounded-3xl p-8 border border-gray-200 text-center backdrop-blur-md"
       >
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">
+        <h2 class="font-lato text-3xl font-bold text-gray-800 mb-4">
           Here is your inspiration for the day!
         </h2>
-        <p id="quote" class="text-purple-800 text-lg font-semibold italic"></p>
+        <p id="quote" class="text-purple-800 font-montserrat text-lg font-semibold italic"></p>
         <div class="mt-4 text-right">
           <span id="author" class="text-gray-600 text-sm"></span>
         </div>
@@ -51,11 +64,11 @@
       <div
         class="bg-white/80 p-8 rounded-3xl shadow-lg w-full max-w-lg text-gray-900 backdrop-blur-md"
       >
-        <h2 class="text-2xl font-bold text-gray-800 text-center">
+        <h2 class=" font-lato text-3xl font-bold text-gray-800 text-center">
           Wondering what the weather's like today?
         </h2>
 
-        <div class="mt-4 flex gap-3">
+        <div class="font-montserrat mt-4 flex gap-3">
           <input
             onkeydown="handleKeyPress(event)"
             id="cityName"
@@ -94,14 +107,14 @@
       ></div>
 
       <div class="relative text-center max-w-3xl mx-auto">
-        <h1 class="text-3xl font-bold mb-4">Search Images</h1>
+        <h1 class="font-lato text-3xl font-bold mb-4">What Will You Find Today?</h1>
 
         <div class="flex justify-center gap-4 mb-6">
           <input
             id="searchInput"
             type="text"
-            placeholder="Search here"
-            class="p-4 w-2/3 text-black border-2 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Search here for images"
+            class="placeholder-gray-900 font-poppins  p-4 w-2/3 text-black border-2 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
 
           <button
@@ -132,7 +145,7 @@
       <!-- Overlay -->
 
       <div class="relative text-center max-w-xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4">
+        <h2 class="font-lato text-3xl font-bold mb-4">
           What are your goals for the day? <span class="username"></span>
         </h2>
         <p class="text-lg mb-6">Set them below to stay productive.</p>
@@ -160,7 +173,7 @@
           </button>
         </div>
 
-        <div id="goalList" class="mt-6 text-left bg-white/20 p-4 rounded-2xl">
+        <div id="goalList" class="mt-6 text-left p-4 rounded-2xl">
           <!-- Saved goals appear here -->
         </div>
       </div>

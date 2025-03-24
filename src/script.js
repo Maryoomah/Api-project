@@ -73,7 +73,7 @@ async function getQuote() {
     }
 
     quoteElement.innerText = `"${data.quote}"`;
-    authorElement.innerText = `-"${data.author}"`;
+    authorElement.innerText = `-${data.author}`;
   } catch (error) {
     console.error("Error getting quote:", error);
     document.getElementById("quote").innerText = "Failed to load quote";
